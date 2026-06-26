@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociación Campesina Sueño Agropecuario de Colombia</title>
+  <meta name="description" content="Asociación de pequeños productores campesinos en Aipe, Huila. Producción, comercialización y asistencia técnica agropecuaria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menú principal">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-brand" aria-label="Inicio - Asociación Campesina Sueño Agropecuario">
+        <img src="data:image/png;base64,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" alt="Logo Asociación" class="nav-logo">
+        <div class="nav-brand-text">
+          <span class="nav-nombre">Sueño Agropecuario de Colombia</span>
+          <span class="nav-lema">Aipe, Huila · Juntos por el campo</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#quienes" role="menuitem">Quiénes somos</a></li>
+        <li role="none"><a href="#productos" role="menuitem">Productos</a></li>
+        <li role="none"><a href="#junta" role="menuitem">Junta directiva</a></li>
+        <li role="none"><a href="#noticias" role="menuitem">Noticias</a></li>
+        <li role="none"><a href="#contacto" role="menuitem" class="nav-cta">Contáctenos</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Aipe, Huila · Colombia</span>
+      <h1>El campo colombiano tiene voz y tiene fuerza</h1>
+      <p class="hero-descripcion">Somos pequeños productores campesinos unidos para producir, comercializar y crecer juntos. Defendemos el campo con trabajo, conocimiento y solidaridad.</p>
+      <div class="hero-botones">
+        <a href="#productos" class="btn-primario">Ver nuestros productos</a>
+        <a href="#quienes" class="btn-secundario">Conocer la asociación</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num" data-target="20" data-suffix="+">0+</span>
+          <span class="hero-stat-label">Asociados activos</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-target="2025">0</span>
+          <span class="hero-stat-label">Año de fundación</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-target="29" data-suffix="">0</span>
+          <span class="hero-stat-label">Líneas de acción</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ QUIÉNES SOMOS ═══════════ -->
+  <section class="seccion quienes" id="quienes">
+    <div class="quienes-grid">
+      <div class="quienes-imagen">
+        <img
+          src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80"
+          alt="Productores campesinos del Huila trabajando el campo"
+          loading="lazy"
+        >
+        <div class="quienes-badge">
+          <span class="quienes-badge-num">2045</span>
+          <span class="quienes-badge-txt">Horizonte legal</span>
+        </div>
+      </div>
+      <div class="quienes-contenido">
+        <span class="seccion-eyebrow">Quiénes somos</span>
+        <h2>Una asociación nacida del trabajo campesino</h2>
+        <p>La <strong>Asociación Campesina Sueño Agropecuario de Colombia</strong> es una entidad sin ánimo de lucro constituida en Aipe, Huila, el 22 de diciembre de 2024 por familias campesinas que decidieron unir fuerzas para producir mejor, llegar a más mercados y defender sus derechos.</p>
+        <p>A través de la asociación, nuestros socios dan a conocer, venden y comercializan sus productos agropecuarios, y también fortalecen sus propias capacidades para crecer como productores y como comunidad.</p>
+        <p>Estamos inscritos en el <em>Registro General de Pequeños Productores de la Agricultura Campesina, Familiar y Comunitaria</em> del Departamento del Huila, y bajo la inspección y vigilancia de la Gobernación del Huila.</p>
+        <div class="pilares">
+          <div class="pilar-card">
+            <h4>🌱 Producción</h4>
+            <p>Cultivos agrícolas y producción pecuaria con buenas prácticas.</p>
+          </div>
+          <div class="pilar-card">
+            <h4>🤝 Comercialización</h4>
+            <p>Llevamos los productos del campo a más mercados y compradores.</p>
+          </div>
+          <div class="pilar-card">
+            <h4>📚 Capacitación</h4>
+            <p>Asistencia técnica y formación para asociados y comunidad.</p>
+          </div>
+          <div class="pilar-card">
+            <h4>🏛️ Representación</h4>
+            <p>Interlocutores ante el Gobierno en temas de reforma agraria y crédito.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MISIÓN Y VISIÓN ═══════════ -->
+  <section class="seccion mision" id="mision">
+    <div class="seccion-centrada" style="color:white;">
+      <span class="seccion-eyebrow" style="background:rgba(200,230,160,0.2);color:var(--verde-suave);">Nuestra razón de ser</span>
+      <h2 style="color:var(--verde-suave);">Misión y visión</h2>
+    </div>
+    <div class="mision-grid">
+      <div class="mision-card">
+        <div class="mision-icono">🌿</div>
+        <h3>Misión</h3>
+        <p>Representar y fortalecer a los pequeños productores campesinos de Aipe y el Huila, facilitando su acceso a mercados, asistencia técnica y recursos, para mejorar su calidad de vida y la de sus familias mediante la producción agropecuaria sostenible.</p>
+      </div>
+      <div class="mision-card">
+        <div class="mision-icono">🌄</div>
+        <h3>Visión</h3>
+        <p>Para 2030, ser la organización campesina de referencia en el departamento del Huila, reconocida por transformar la producción familiar en una cadena de valor consolidada, con presencia en mercados regionales y nacionales, y por su impacto positivo en el bienestar rural.</p>
+      </div>
+      <div class="mision-card">
+        <div class="mision-icono">⚖️</div>
+        <h3>Nuestros valores</h3>
+        <p>Solidaridad entre asociados, honestidad en el manejo de los recursos, respeto por la tierra y el medio ambiente, y compromiso con el desarrollo de las comunidades rurales campesinas.</p>
+      </div>
+      <div class="mision-card">
+        <div class="mision-icono">📋</div>
+        <h3>Datos legales</h3>
+        <p>NIT: 901904581-6 · Inscripción S0714829 · Registro ESAL No. 53652 · Entidad supervisada por la Gobernación del Huila · Patrimonio: 00.000.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PRODUCTOS Y SERVICIOS ═══════════ -->
+  <section class="seccion productos" id="productos">
+    <div class="seccion-centrada">
+      <span class="seccion-eyebrow">Oferta productiva</span>
+      <h2>Productos y servicios</h2>
+      <p>Nuestros asociados producen y comercializan directamente lo que el campo huilense tiene para ofrecer. Calidad, trato justo y precio honesto.</p>
+    </div>
+    <div class="productos-grid">
+
+      <div class="producto-card">
+        <div class="producto-imagen-placeholder">🌽</div>
+        <div class="producto-cuerpo">
+          <span class="producto-tag">Agrícola</span>
+          <h3>Maíz y cereales</h3>
+          <p>Producción de maíz tecnificado y tradicional. Disponible en grano seco, mazorca y semilla. Cosechas en temporada de verano e invierno.</p>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-imagen-placeholder">🐄</div>
+        <div class="producto-cuerpo">
+          <span class="producto-tag">Pecuario</span>
+          <h3>Ganado bovino</h3>
+          <p>Comercialización de ganado de carne y doble propósito. Animales criados en pastoreo extensivo en las fincas de los asociados de Aipe.</p>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-imagen-placeholder">🥦</div>
+        <div class="producto-cuerpo">
+          <span class="producto-tag">Agrícola</span>
+          <h3>Hortalizas y tubérculos</h3>
+          <p>Yuca, plátano, tomate, ahuyama y más productos de pan coger cultivados con métodos de agricultura limpia y seguridad alimentaria.</p>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-imagen-placeholder">🍯</div>
+        <div class="producto-cuerpo">
+          <span class="producto-tag">Transformado</span>
+          <h3>Productos procesados</h3>
+          <p>Derivados lácteos, conservas, jugos y otros productos transformados por los asociados con buenas prácticas de manufactura e inocuidad.</p>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-imagen-placeholder">🔧</div>
+        <div class="producto-cuerpo">
+          <span class="producto-tag">Servicio</span>
+          <h3>Asistencia técnica</h3>
+          <p>Orientación en siembra, fertilización, control de plagas y adecuación de tierras. Disponible para asociados y empresas del sector agropecuario.</p>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-imagen-placeholder">🌿</div>
+        <div class="producto-cuerpo">
+          <span class="producto-tag">Servicio</span>
+          <h3>Agroturismo rural</h3>
+          <p>Vivencias en finca, recorridos por cultivos y actividades de campo. Una forma de conectar la ciudad con la vida campesina del Huila.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ JUNTA DIRECTIVA ═══════════ -->
+  <section class="seccion junta" id="junta">
+    <div class="seccion-centrada">
+      <span class="seccion-eyebrow">Gobierno institucional</span>
+      <h2>Junta directiva</h2>
+      <p>Elegida el 22 de diciembre de 2024 en Asamblea Constitutiva. Períodos de 4 años con posibilidad de reelección.</p>
+    </div>
+    <div class="junta-grid">
+
+      <div class="miembro-card">
+        <div class="miembro-avatar">CA</div>
+        <span class="miembro-cargo">Presidente</span>
+        <h3>Carlos Andrés Avilés Díaz</h3>
+        <p class="miembro-cc">C.C. 83.168.390 · Representante Legal</p>
+      </div>
+
+      <div class="miembro-card">
+        <div class="miembro-avatar">AH</div>
+        <span class="miembro-cargo">Miembro Principal</span>
+        <h3>Álvaro Hernando Amaya Valencia</h3>
+        <p class="miembro-cc">C.C. 1.075.299.828 · Junta Directiva</p>
+      </div>
+
+      <div class="miembro-card">
+        <div class="miembro-avatar">ML</div>
+        <span class="miembro-cargo">Miembro</span>
+        <h3>Magaly León</h3>
+        <p class="miembro-cc">C.C. 55.216.791 · Junta Directiva</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ NOTICIAS / PROYECTOS ═══════════ -->
+  <section class="seccion noticias" id="noticias">
+    <div class="seccion-centrada">
+      <span class="seccion-eyebrow">Actualidad</span>
+      <h2>Noticias y proyectos</h2>
+      <p>Lo que está pasando en la asociación, los proyectos en marcha y las oportunidades para nuestros socios y aliados.</p>
+    </div>
+    <div class="noticias-grid">
+
+      <div class="noticia-card">
+        <div class="noticia-img-placeholder verde">🏛️</div>
+        <div class="noticia-cuerpo">
+          <span class="noticia-fecha">Enero 2025</span>
+          <h3>Inscripción oficial en Cámara de Comercio del Huila</h3>
+          <p>La asociación completó su constitución legal con registro No. 53652 del Libro I de Entidades sin Ánimo de Lucro.</p>
+          <a href="#contacto" class="noticia-link">Más información →</a>
+        </div>
+      </div>
+
+      <div class="noticia-card">
+        <div class="noticia-img-placeholder tierra">📋</div>
+        <div class="noticia-cuerpo">
+          <span class="noticia-fecha">Octubre 2025</span>
+          <h3>Registro ante la Secretaría de Agricultura del Huila</h3>
+          <p>Fuimos inscritos en el Registro General de Pequeños Productores de la Agricultura Campesina y Comunitaria del Departamento.</p>
+          <a href="#contacto" class="noticia-link">Más información →</a>
+        </div>
+      </div>
+
+      <div class="noticia-card">
+        <div class="noticia-img-placeholder dorado">🌱</div>
+        <div class="noticia-cuerpo">
+          <span class="noticia-fecha">Próximamente</span>
+          <h3>Convocatoria de nuevos asociados productores</h3>
+          <p>Estamos abriendo cupos para pequeños productores de Aipe y municipios vecinos interesados en comercializar sus productos a través de la asociación.</p>
+          <a href="#contacto" class="noticia-link">Quiero asociarme →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACTO ═══════════ -->
+  <section class="seccion contacto" id="contacto">
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <span class="seccion-eyebrow">Contacto</span>
+        <h2>Hablemos del campo</h2>
+        <p>Si quiere asociarse, comprar nuestros productos, gestionar una alianza o simplemente conocer más sobre la organización, estamos disponibles.</p>
+
+        <div class="contacto-dato">
+          <div class="contacto-icono">📍</div>
+          <div>
+            <strong>Sede principal</strong>
+            <span>Cra 2 Este N 1-17 Sur, Barrio Francisco Cabrera<br>Aipe, Huila, Colombia</span>
+          </div>
+        </div>
+
+        <div class="contacto-dato">
+          <div class="contacto-icono">📞</div>
+          <div>
+            <strong>Teléfono / WhatsApp</strong>
+            <span><a href="https://wa.me/573163160205" style="color:var(--verde-medio);">+57 316 316 0205</a></span>
+          </div>
+        </div>
+
+        <div class="contacto-dato">
+          <div class="contacto-icono">✉️</div>
+          <div>
+            <strong>Correo electrónico</strong>
+            <span><a href="mailto:suenoagropecuariodecolombia@outlook.com" style="color:var(--verde-medio);word-break:break-all;">suenoagropecuariodecolombia@outlook.com</a></span>
+          </div>
+        </div>
+
+        <div class="contacto-dato">
+          <div class="contacto-icono">🏢</div>
+          <div>
+            <strong>NIT</strong>
+            <span>901904581-6 · Entidad sin ánimo de lucro</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="formulario">
+        <h3 style="margin-bottom:1.5rem;">Envíenos un mensaje</h3>
+        <form id="form-contacto" novalidate>
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Su nombre completo" autocomplete="name">
+            </div>
+            <div class="form-grupo">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email">
+            </div>
+          </div>
+          <div class="form-grupo">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option value="">Seleccione un tema…</option>
+              <option value="asociarse">Quiero asociarme</option>
+              <option value="productos">Compra de productos</option>
+              <option value="alianza">Alianza o convenio</option>
+              <option value="asistencia">Asistencia técnica</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-grupo">
+            <label for="msgTexto">Mensaje *</label>
+            <textarea id="msgTexto" name="msgTexto" placeholder="Cuéntenos en qué podemos ayudarle…"></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar mensaje</button>
+          <div id="form-mensaje" class="form-mensaje" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Mapa Aipe, Huila -->
+    <div class="mapa-wrapper" style="margin-top:3rem;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15946.41!2d-75.2368!3d3.2114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b66b7a1f6d5ef%3A0x5e3a4f2f2e3b6d5e!2sAipe%2C%20Huila!5e0!3m2!1ses!2sco!4v1700000000000"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de la Asociación en Aipe, Huila"
+        aria-label="Mapa de Aipe, Huila, sede de la Asociación"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAABXCAYAAADSzH3vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAEccSURBVHhe7b15tGfXVd/52eece+9veHPVq1lVpVJpHmxrsCxjW55ijDEY0wYCDSFTpxtoaHo1GZpAmkUn3Rn+6E5CWL1W0ukOIRCCQZgxxMZGnpBlSyVZU2msKqmGV+/Vm99vuvees/uPc+57r0olqWwZgXuxl57qN9zfHc75nj3vfURVlb+gv6CvkcylH/wF/QVdCck3Hcd5pbuVi9+GyxzXPKlsP1Yuc+AlZC49+SvRa58q0hWe7s8zffMB5xXo630I4TI/3j6xCoqi6TNJX+rLfvQaAGsOf5VDvpnomw44V3qzl5uf5lFlG8vZBMD2E18KnMud7DLUgOrV6LWP+Oagb0rg6JVMwBU8lgLhNU8UFUG5AtD+BXD+nNMVcf3LKTnbSQRF8RcpPJcnu+1al+Nar0VXdL/fZPTNB5zL3G3wHtJkXjShuk0TUb1EK04gMA2feOVpFRGQSy6d3ghRlMm2z7Zf92UAe+XLfFPR/y+AoyHEFyJJH9ErkVSIKpIUmK35ffnMetOcN+Fv23eSACWASTcnL0PZNnr56b8p6Q0BzjfyEtut583JJE6IAkGVoArGbh2YSNHIIZr5U0Uu+qxhHRdTrYJKPKqxnLyGxE0ixxLAaEivhcSkrsTafzlX+iagNwQ4oeEI3yASQBN3EQRNE3/pX9j2mgQQiLqNKngJlBqP2jqmgcHWtRxmy1OaJtmmT5ojJSnRjSLdwHbzvM0wX2a0rxQ4lzvu0um73DF/GvSnCpzm1HFalIAiSpyGoHGITZxgFIxXJCmtsil24mBo+jcIVAplCAx8Ta8csVoO6PmS9XLA+mhAOaoY9gZUdc2oHDGsK8q6jrpQUNR7CIERngFVvEby18Trxms3FtdYsORYjDVYaxExGGNwzpJnOVmWkeUZnXabwmZ0ixbjrS5dl9PJCsZaLTpZQS5CrpBtG5ug8ZqbIk8EVAkSQbzFsZolso0rajIC0nuVi4HT/PRPA0p/asBR1S0LRAMYjRMRBKMgIT5pMELlJOoOPkIsBAVnMCY+sibusV6XzPXWObuyxvzSAufXlplbXuLM0jyr5ZBeNWKjHlEHj/OWIFCLUgPeKKQxtiFyhCBKMCHeT/oupAn0Zut15hXbjFKaO9JUxv8EiM9lETpZwWTRYrLoMF2MsXNiksN7D3Bo7z72j02wo9OhcBlZnACCr8mMxQrgA8YYalFEFKMGoxFMCiBmE9TNfW+SXKz/f/MDp/LxgZwhGIuqEnxAxRIsjIAegZ7WeKCsS1b7PS6sLXNu4TyLKysMyhHLa6uc6q0xP+rR7w2SyFGctUnJVcQIYiweIYhEABjwzYrWJFJCM9CKSUASbThBArAACDWKphlqJqEBi2pAAaNKphIV7gAmKCZoBIJXWi6n22kz1m0z1Rlj9/QM1x84zA0HDrGr1WHSFYwbh6ujSPVZvBeLIEHREDDWQgKN1+jN3gKHJFEZ/yXNQXyEbzx03hDgmCoqrHVm8NZQJQ4yCJ7VYZ9z68ucWlrg+LmXODs/x+r6Ov2qpF+NGPmKQV3hRRFj0TzDG4eiGJP0DGPitUJARbAIeQWg1CieyO2MTcenlRokgkp0a/WabVZThBBUDbfcvnoT5zEIJokXgsckl4CGKJrjj9L3icsRAjKqGMOxM++wrzvB0dm9vO3mN3HTwasZy3JcuoyoYgAnbCryEdiBGqHepmsZIsczzYyGdLwx33C28wYAR/AIlUBf4ExvmZPzc5ydP8/5lWXOrSxybnmJC2urlAQqDREIRqgJSOYwWUZNwPuABMFiESN4jX4YRakTK1cjWIGi8pgEUAwEkWhtJRIgIAQxkLgQCVTazPW2Y7dT5DWSVnS8PhL1EgUCkRuINSCC14BPuowJSm4sGYKOKmwdMFVN7pUdY5Ncf/Rabjx8mH22zbX7D7FzbAIDZCg5gUwVs8kVBS92U68RJVqKl85oEvnb6bJK9KW/uxw1C+gbDZxLTxeAFYHHz5zikw89wHML51jor7Ha70duYC3BRaDYZIsoiopgjIlcQTUOiAi2jhylUZRVBDFC6T2egDEWlZD4zBZXCiFcpPwGH8jFInXUGYyRLStMwKdjQ1ByBKMRKM0567qO99hwGIl6lKbYlpF4PBrPjQgaAk4FExpLM2ATFzQCdV3jg6drM2Yrw6GZ3bz5ppu4/fobOTi5ky6GFoFcFfEh6oniIjdL19gcdw1bk3wZ4FyOXhFMsjWvWyC9dKZfB13uVEGEcyj/76d+m9/7wv1s5IKMtfDGxAkEagGswWgcRE06kCFOQFrQmysdmoeJK0yDYqzBGEvwnrIqCSbqVaGqEVXyLAfA1zUhASkTh8Mi1lJrABFM7qh8TV17Ot0OvqqjruGiNVX5mip48lZB5T0h6R7OWrQOhKBIUGwClYnMId67RtG46ZwQUKLvp+FaKmBCoKhAhhUyqrn+4EHuuelWbt5/iBt2H2A6KzBVRYHBiEWDopG5xYlODsuQdDZ7hZLqcsDRtGBJYxYtQPnGAKc5xfaLbH4nwplQ8a9+41f57BPHGHZzRoUBl6VVJ0ksKXUycaO5HiIgmlULgFCbpLP4ACHggmJVIvsXSzvL6XY65HlG4RxtlzNWtGi7nFB7UMU4hxhhrRyw0F+nqmvKqsQHD15xxjAaDKHyVFVFZYV+PcKrYvMMXASa2njvAUU95MFFEzopqQJIiKKjAc7QQemSW0Kjt9kEEBoRBKBUYsiMJVNFByXSH7JvbIo7b7iZe255E1fv2suYzRhzFisGDYrdDJ8kfS29dnGU07uvkbYt0IZ7843iOJr0mQY4F4NHGAp87onH+L0vf54TvSUWqiH9akTwinUONYYqeDRzW3pkCFsrNQ2EiBCs4IqMTqvNeLsbgZIXjLe7THTHmBwbY6zTZRhqBhsbVBtDQn9I2Rswlrc4sG8f1xw9SkB5+MRxnlk8DQgT3S4ZBlsFpvI2HcmYLNr0VtZYHKyzMuzTGw1ZH/ZZ6a9TBk+vGjEoRxHIxlIHh3UOYww+cbBGfDSDHC286LHeNKdlyyWARN0lZDl17UEUh5B5sLViypoJ1+Kq3fvYMz3Ovpkprjt4NbundzLTGaeNpQXkRGBaBZsU69eiTWW+oaTDbReBkYOZ1w+cBjDN65cBR0G8MLJwerjOM8sLPHPhDC+dn2NhcZF+fwAqVL4maGTj1hiyIicrCrIsI28VtDpt8rxgtj3GVN7GOItHKYNnbnGBC6vLLK6tsLy6ylq/hy+itzf0hrTFctWuvbzrW97BgX37eeLJJ3no0WOcXlqgzBSL4qpAq4ZD07O849bbuf3I9VyzZz8FhlqgBDyBXjlkubfOcr/Hcm+N0+fP8dKZM5xdX2G+ig7JYVUSnIHM4huXQDKjixqyJKsUCBKi+EqKtUpSrr2hyFv44KnqGiORh+XioPJo7XFa0TY1Y3nBwZ17OLJrH3u6kxzeuYejuw8w3enSMobW1lSkVdk4E7dIiXodEPWx+IKyLrlwYZFOq2BmcgqjgjGvU1RtB01Dl4oqiBqypgGsiJNQqmdQjah9jU/xJfFQieCd5fxwjefPn2VufY25tWX6dUVvNGS0uoEOR5RlyaguqYMy8lX001jDyFdkeYbUJTIsGbMF3/qe93PDjTfx5Ucf4fHnn+H80iKj4PEtx0CVaXF0lnt8x5338B13vJ0j07N0jSGMPIIQCrPlB2omPP15VUbliI2q5Oywx9zqMk+dPsUDxx/jpbUlRrlDWxm1NdQh0KoCLZ8WmoBPXCik95qGT9Q0c7xtxUfFpRGH4BENaFWTqZBjKILQsRk7J6Y4tGc/V+3dz16bcePBQ+ye3kEbwW0LiTQUNFqmzhjWQ+DF9WUWRj0eOPYgo6UV/uqHvovDnSkya2NGwRsCnCRqNI1Bo7g1A9JMQgX0gVPL8/z+lz7Pg08/yWI1Ys1XeGeoNMpxZ6IlhDEYG304VgzVYEhuHNVoSDdzHN63j8N7DnDt1Uc5efYMn37wT1ith4QswzhHhZJbh7mwxt37r+Ynv/v7uWZymna6V3/5R9mkRow2kl/TojjtKz739KP88aMP8/S50/TUo1mGyRxBPRr8Rc473RbeaJQUE8zLzepLSNMNmBDhbKKDHmpPKCucseTOMW0dR/ddxYFdu9g7tZPxLGesKMhdFoEAeF9TDUf0fc2plQs8fe40S70Nzp06yXtuu4Mf+8j3MVHWFFkG3wjl+Ep+fukANA/sVamCxxjDUAzHFxf40hOP8NCzxzl+9iXqIqfMHMHZaHskT68S8FaibhEUvKcIhrxWxiTj8KGrmD24l4nuGL3VNR5/4gnmFhcJ7ZzSKkGFzFiKKlBsDLludh8//KHv5M0HDpNpjHy/tLrEiyuLLPTX6W/0EB/lS7NYnHNYa8myDJdl5GKYkIzgLJWz9Ixw7MVn+fLjj7IyGKBiwRpK46mb+MV2YG77KCrT2+NUl6dG/DXKt43mYtRtxCCagrlW8cEjZU3HOJyPLobCOqzbcp6iwoZ61sIIQWiPPDdN7+FHP/p93LL/KkyoyY2Liv/rBc6ldLnTXXYAjFCHQEBxxvLC2jK/+Ok/4HPHHqLu5NRFRpVZvIlOdPUBi8EYJRgfxVsISAjYILg6cGh2L9/6jnsZHx/n88eP8dAjxyAoo6pEihxvo/5laqXeGHDAtfnwm97Ku95yB9fO7qUFrA36fObRr/CpJ49xfGWehVBiMBi/5aPRZs4b01QEp9D2kOcZlTMMrVCqUibvtXPRHaDBb3GVBiyb7gaN/iKSzvMaHC9I5IoN5xNNoRTVKNJS8HRowYuQiyEXgcojIYAqmrIDQMBaqswwqiuK0rOvcvzN936I777r7dG6w2MxDSgvM9Ovg17pdNvBoySOg4IIZTnik48/yj/74//MGp46NwwNkGVUPmxxFHGI1GiosFWgazO6ruD6a45yyw03k7Vyjj/7DI8+/QRnhqtUwSNAq2hTlmWc6GHFjCm4amon33b73bznhlvY2eqQBcgMzK2v8i//0y/z2ZNPs7FzjBWrFOqij0kad0N07jVB0PQJqh6vAbWWkoBxLuYFJe80QclC5AxxohtTPI6PTVwmCJQ2vCZwNOlHbBtf0SaYu2WaezUxhqdCCB5j0zeSrOEmhdYaQu0ZN44bZ/dy9/5r+Ogd9zDrcjoIvh7h8iJxw1ea6W8gvewSSWtvTNaNfo/fefhL/J9f+BRVO6e2wsjEqLZJpmiezFFfj2iLMG0K7rn+Fv7S297F9OQEn/ri5/nKieM8fuYkVTfHFymeVQcsglY1zitdNdx99Y18z/u+jaM7ZilQCpQ8TWBPPf/loS/xa3/yGZ4brDFoOTAuTn66dwAffEzuMonrANGjA5qyRkISa1YsRgymiY+RJldSQDIoPgQya1GfQi6khDTicdJ4oi+hLWX60m8SafS2GyxYwYsSCNQSIrey8ToGQ+4Fu7rB2w7fwF//8EfZ3x1n3DpylI6C9SF6qL8R5viV0KX+ASF6jL1GUQVw7OyL/NPfv48XF+YwRU6vLrFZhkvWQq7CdGeMq6/az1uuv4FrZ/ZxoOiyqzPORn/Av//d+/jy6ec4K0NWpcKLjaw5CN0sY8fEJLccuY43X30dR6d2caA7jhWDl0CO4pJDrkRZripeWFvkKyef5eHnnuHE0gLD4PHe40MgaEjcJoqvGMyI8qaZZJEUktTo/TYYRIShKKXRFIYwEYcSxbaYGE+zYsjrrWBlCAG9xAHX0GtxJQATLBqi6a82cRaJYy8oIXjsyLNjZLl9zyH+8jvfy51XH8EKVJGv0VLIapMiqX9GHEdSwFGTgixi2CDw+OJ5nj51goWVJVb7Gzhr6RYtds3sYPfUDHumZpka6zLhCjoIeQBXBtQqC/0eJ9YXOXb6Oc6ur2CcYzzrMDs+wYFdu9kzPctkq0MbS1uVVhVQA97FXD6XXP8+6SUjsQyA9XrE8vo6vWrI2sYGyyvLrPV6DEZDyqpiOBoyHI7o+5JVieGIuq6p65qqrqmriqBKVdd4H6hQaolj4CWawN6AOgPWxNcBXDDYBDYSeJrX26kRVa9GCoiJgWFVJXiPU8WpEIYDCpuxw3Z433W38Z1vfydHJibJfMCI4CUuEodBQhJ/hjcIOJeUqsTVmAKOaDTFVamJXspRkruBKGYcUbETwFcViJKLxYoQao9HMZljpMpIYrrBSANtk9FBYtJWCvpJAOtrMhHEODQFANP0oBqoQ0DFIMZRp2izM0lpbVwHqnjVGPn2ngplaKIIq3wCjwZq7xlWJb1Bn0E5oh5VjMqK5fU15pYusLixymJvPWYwDgdUongjDKzFN7pKEofRsbNFTVpI8/H2Q0S2LLXIqJIPqK5xpacrjhlXcPOho9xx3Y3MZAVvOnSETpYRfMWYs0hVYtWCMai1VEm0uqhL/ekD52U1Ts3K0SYtIlEIqEbwNGurYaeiCr5GqTHWEsSgKqiYzUzh4Cucs6Dgg8WIYFGCRtc9SSfR4OP0q8GaJvMl3kUSOinzK+Xa2JSh2IgGAb/NwqJx7/s0eU1QMTn4lOTo2+bzKYF+XcW/smQQKs4tL3DixVM8e/YlTvoR8xtrrK+v4UNAnE26j8TzG0MQg5cowpRY7SGSLu6j/ihBcVWFVDVt69g/vZND07PcfOAwd1xzA/snppjKclwaHp885JaawoPUCgjqLCMbuXP+hgHnFWj7pSMbjkOrYUvZ082VVIJWBJMGRyMvQi2I4L3HOcGHErxgqgIcqPN4qVEBpw4UggnU4rEpET3dQbqgpOlNCFFeRfO8mBqwv9LRCjEOxbaDL/oOyuBZHvSYM4GTC2d58cxp5hYvsLi2ytqgz6COYY3K16hz1AreeyRspXBYGyPmeZ7TynPGfODAzAw3X32UWw8d5eDMLDtsTrYJ5Ji1KNsWQlzODduKNxvnIhkCf1bAufSyW/K78UY3RXZxMquyRozFOIePbgpEAsZE1TRoBJSqwanFDmM+aLCKiomxnjqeVkUJro6WcmMtJaC8fDSawXttupwOctHiSBw0PtkWxd9d/FuNDBiAUpSBr6iBYV3RK0eUVUVZ1aAaXQ0I1kZ/VyuPCfR5ltNqtQgGjDOMSU4byDRmFBpl0yQnWbCX0uWeiT9L4DSWQmOBbN1gQKkScHx0/pHh6y2xUlZgHYhRAlHnESyqEThCwJk1hvWIkbfk+QQES0ssRhWlIpgRgsNI+6L7+tOmTVF4EUVDXqI3CFHFlpsR38T4FHEpUX37T71HmhRaBF/H/CNr3SYWByGKM6dRbRCN+UtIdDTGDCXINrnvFv25A473fhM4xjTWgyaOE1IZhI+iSwWRmOTeX1+nVRQ4W0SlW2xysdSo1IgJVNUqK8PTnD4/j5opjhy6jcKMkweJ1QriCaZK1VHZRRO5NU7Np/oybvDKdKXHvTaFEBUmryFCwpgYCNXoDRbAbml3CIZnnn2KYw8/zJtvexPXXnstxmURSLVgjEuafYh5FsbEyhPb8PZoZV1Kf6bAaQCy/f2l+o2IolpFjiEZjSdcjOIZYExF5Td44Itf4MajN7NrzxHqkWBNhphAkFWWVp/Bh3lOvfgMiysZBw7dxuFDb8aZySi+akFCiE4vYxDbONXiZKhG/0p0w4eou6dE+Ob+vQ/YFBjcogb0lx/khtbX1ynLEl9XjI+P41PO0UZvg8cff5zV1VUWFha45+1vY+/B/VjnyFyGiOA9ZJnD2IxBf8CJkyc4duxhNtZX6bTaDIdDfuWX/wMnT57kfe99L+9/73t55zvfxeHDh3AmQ8WkEE1MYBdro5hKKbOk/KBL6c8VcLz3lxn8isAQQo6GIho9AKaiDvOoLPLY8S8yd77Pt9zz7Yx3uwxHG4zKVeYXThBY5vz8U6xvnGE4CLzl+r/JddfeC+QYycFXUA9BasgKRpqhCrlEc5fkjo86T7xf78OWARgCLssoy5LhcEi/16OsSowxnD8/TwiBU6de4uTJk4gIGxsbnDt3jqWlJebn5xkOhwD8+I//GG+7+63UdU2W5VhrePzxx/lbf+u/5ey583zsuz/Kz/6Dn2X/gX38zu/8Nn98//08/9wL1FXNxPg45ahmNBqxtLTCM889gwI7ZnYyHAwpWjn1KIIydxl33/1Wfv4f/UMOXX8Npa/IjEWaMprk3lCJIo7XhP3F9IYAZzs1us2lwAmhIjDAmoIQDKKCkQrMMmvD5zg99zBn555iYvpmDh54Ewsrx+mNXqCqztDrzbG+vML60pBDV93A7Te9g8niVkLZwrhOtNbqPio1AYsrdlGb3dSa0bI28QoBJJr4gAbZVJx7G2usr68yHA7p9XqsrKzgU75xkefcd999/Ltf+vesrfepqlgZup2yLENVabfb/MD3fx/ve9+7ufPOuzh37hwPPPAAq6urPP/886DKT/7ET3LLm27l3Pk5Pvzh7+DJJ54mzzN2zc5GvUXBWMfK8gqjqgKiqHfO0Wq16G30EGB2504GwyF/7+/9Xb77h76HyelJRFNKqyq5LSJQts3+KzCXy9IbCpztIurl7vMYJAxhhMgQzDq94Yus9U7w0rljlNUc5xdO0s0n6GQdhqMFDCusr86RG6Xu1ezZcZCr9lwLVWD17DO0XMZ4dxqCR+uSKhhqt4vQvpWdRz5Ad/Z6sDkGhypUlcfZIuo+JiMEOHnyFCtL84h6RqOSPM8ZGxuj348gEWNYX1vld3//D/hPH79vE1RNyoWIMBwOk04X8L7muz76Eb7tg9/Kv/wX/5KvPvYUN1x3Lff95seZmZ6m1WphnOPBRx7hL//A93Nh/gIA4hzWOFye4UyGdQ6XW4yB4ANHjlzNu77lHdx3328xd/Ysg16fqZkZumNd7nnrnfzsz/w01xw5Sl7kKIK1eeQ4f56Bsx0wF1tQJMBodPwBKmv0hs+xtPYY80uP0B+8iPeLvPTSc5SDdQ51x5kxsLG+yI6pjJYjZvtXjrHWTuq+IVSeTncIUuFHI1o5BN/H2xZldpDnLuziwM3fx/4b380gOEajmhMvvEg5Um65+c20WhOgluWlVX7j4/dx/MljHD50gA996NvZ2Njg13/91/He810f/SitomBycpL77/8cP/2//BzD4ZCqqnDO0W638d5TliWDwSA9t8dag3UWVJmanOaf/JN/zEc+8hFGwyHPHH+G8YlxbN7iL3//9/PIsUcpioI6RIelsQYRQ6fTZWKiTV0PaBUFP/PTf58PfvCDPPSVr3Du3Dl8VfPIsWN86YEHuO7wEf72T/0UY+MTBBFuevOb49BLrDT5WgDTkP25n/u5n7v0wyuni5XcLWnZvA2o1pTBp2rCGPgTIGiJSInSB9lgEE5zvv9FTl34LKfmP8tK/xE21h6nXH6G/ktPcE3LcH0rZ1YG7O3Crq4j8yVdY5hwOV2x2OGIbl3SoiKIox5V2HqICyOKwlCqshIEZnZiZidZDyt89ck/4aFHvkCWG647ej1Tk7sQcoyxrK70+IPf+yS/9Yn7WF1b493vfjefu/+z/PTP/Ty5Nbz/ve/FOcvY2Bi/ed99fPqP70cVMpdjTCzXybKMdquFNY6iKGi1OjiXkRcFE5OT3HX3XfzIj/4IRafN0889x0/+Tz/Fp//4fj74gQ/y9PFneOKJJ1CFIivojo2T5TljY+PkeY6GgK9GTI5N8OM//hN0O12mp2fYs2cPN910M3fd9VbuueftfOQjH6X2gc/9yRexWcGRa44m5fjrAw2vn+NE8RLVqq3Qf6zjjoGhalQRbCpJIYYDkBplnZGfY2XjBQajeQblGVZ7x/F+g/76PKPVc+TDNXa5wN48Y9wH3LBErYku93ZO8DV5q2DQG8T0yZHSztqMeiO0aGFbDqk3EFMxFGF+KJyrWri9N7FqJzn50pBudpg733Qv1x66g8zuJIQ2lg4oDAd9Pv7x3+SP7v8jgtb8Dz/+Exx//HGeOX6cd77zW9i5cyfiLJ2xNvd94nf5+X/4TymHJe1OJybc51FUgZBlGdbELhf9QZ+7776D2dkZfuAHf4Drb7yBX/nVX+Xjv/4bvHDiRSbHp/jYRz/Kpz71RzzzzNMMBwOKTpciWU8hhGhxWcu3vv89fOxjH+MDH/gARVGgKTvRBx/1oVQ8eOHCBTY2Nti/fz/dbvcyqsLXRq8bOJtcJ7afAFUEhwaDpkRa1QqbBVRKSr/CIMxz5vxjlPUZ+qMXGZXnkWod1lbpryxCf4WuH3BoZoKxTOlYqEYDrLXY2uGkwHQyBmsXCC5Ge9s7dlGtDykrwamQ+RHeeOjmzA36LIaMZT9B5fZzbimnlB1cd+Re7rrtw0xP7AHNYqFtsNHdLjVluc5nP/cZRt5gTMFEt0O31aLIcpw1DEZDFi4sMD45zspanx/5sZ/i9Euno7c2BKqyjGmlRY6zDhGhv7HC7tkZfuVXfpk9e2cZGx/n5MlTfOx7vo9TJ0/THZ/grXfdhR8NePDLX0aMwVrH+PgEt99+B3VQzp07x7d924f4zu/4MNdfd5SZmRnquk51auBcvNbmLG3TK733SPKdvR56ncAhejST004lpiMaMXivhDqasMGv0R+eY7n3LEvD45TyElV5Fg2rjNZX6K2uUa+vkffW2N1uc3BsjGLYh6qPzaCza4qqrhn0e0hlkDIVtBmhOzHOyvIaxkBnYoxalNWVVSZsh9IJF2zghf6Qkz3Dar0Ll93EtYc+wFtu+iC7p6/CiKLqCHX0H6U8JTAVo8EyDz/yIJM79rGy2iczhlCV2OTz2Vhfozfo0+l2GIwC//if/QJffexxWkWBiKHf79Hr9QhVCTbWWx09vI8f/q+/l499z/cwMTFBILC8ssZP/MT/yNmzczz33Al+8V/9IkcO7+fJJ57k81/4Ap/4xCf423/n7/Lf/ciPsL7RY2VllaPXHGXn7E7qukZEqOt6k+Nszs02vXI7eEKIrVReD70u4MR+DDEwKSm1UtWjOsSYIYEei6unubB8nIXlp8Et0ZncoKzO0l89S29hkeGFHuNZl9l2ix12RMsoDs/ObgcdDgi9Hh6hFxRp56iJrvFMLGFYY7GYvIXWJWU5JOu2GXjPyqjF+UHF6cGQBW3B1GGuu/UDHDpwD7u6t+B0BovHSR+hwNJFNYMQs/3ECMP+Kk888RjjU5MsLS4hIdApcqrRCAP0+30Gwz69fo9Wd4I//NQX+Nf/5t8yGg3ptNts9HoA7Nu3j067w733vpO/8oPfy9WH9zEYDHFZ9CXVXvn93/8v/KP/7X/nzrvexi/+q19goluAKo88+lUuLC7yjne8E1WlPxgyPjXFjh07knoQHZTbAXGp0877WBDQcKRLXSFfD71O4NR49ZgYaI+f6QjMEmujZ7mw/AQvnf8qffM83fFAYRz95TWWXnqJ4YV5Zqyyd7zFTFtoC0x1xsicYf3CPBpqUEOryDBB8ENPO29Tiqfnh+QC3VYL7z29/giKFlp0WS8962o4Iw43uQMvBbXt0p7cQ2/UYnG5Js9nmOjOMlHMUoQJOq1ppsf2MjWxlyIfTwASqqrk2aefRqSmv7FGZkyqY/IMexsMh0PmLyzgfU13fJLjL5zin/+LX2BtY51BGTAC77j7Tn7kR3+E/fv3k+cZ0zPjVOUwRsm94vIWGxtDXjhxgp/5mX/Aj/7Yf89f+aEfxEpgNBxQ1zU7duxkcXmVwXDAzMwME5NT2CyLHQkTcC4Fy+XoSo+7EnrdwAl4RB0+KM561kdnOLPwEEsbD3P6/ANMzFRk0zWj4YALJ+ZZObHAdLAcnprgqjHHVDFgetJRLq0iw4wyKJWpaU91GQ1KxAfaWmA1J4wCQUuy8Zy11XUohHxqgg0Vzg9q5ofKhX7FKO+wMTbOyvogdqMYWUJZINpFzQSTOw6xa+8hJlv7mM4PMNGdQSjYvesqJsamCSE6KEeDAY8c+wouNY00CuvLy5x6/nnGu2Ps3bs7eojPz1GHgG23OX3mDHNzc5x+6Qw7du7g3nvvZdeuXVhryPOcwWiAOMNoWFH7gJicLM9ZWV7j+DNPc8ddd3LLTTcx3mlRjoacm5tDkWh+T06yZ+9ebBa5EWK2cqHfYHp9wFHFa40ywpoRC2vP8sLpB1lcf4KN4VO0JzaYmW3x7PPnWVtco55fYm9muPuaPRwa61Ivz+N7a6j3WG/JXBss1Opx3YJRWYEXnClw2Rj1qKIcrGJzwY1NMd8bcqFSFr3hTB/WaFFnjr7CalUx3prh2qtu5uDsDRzafSuF7KQodmPdJJK1MOLIyQkqWLGxVjsoNjOIKPNzp3jssUfpdsbRKtByOcONHssL8/i6Zu7MWbrdDmMT48wvLrLrqqvodrtY5+j3epu6R7fbJS8KjDHkrYyi3WZqZpbJqRmKoo0PGi0wIzzxxOMYI7RdBhro9WMvw9179rD/wFUY52JHDGlE0jeGg3yt9LqAE9toBMSsstR7ki8e+zVqOUWl55Bsg/GJghMnThL6HXrzaxzoKO+6YRfF+hL5xgZtC8608b6gPxrRHmuTW6EcDMFXuE6bgQhLo4qBCrbdYWJ8HAVWhjUbWjBw42h3F1LsYFgXBOlibJvZnXvIGGd9xVCPuhzYcyv7dl2DMzFxW5oqBBNSS5XYxgQUawGtefyxY8ydnyNvtSjLkltvvoXdu/aweu4cv/nxj/P8s8+wb98+7nrrXawPhrz9Pe/HZTH1Q4ylrirqqqRotbHOxaRw56KLVlKPucY21YCx8Gu//h+5/rrrGG93sGKZ2bEjmvcuVp+qaow2Na6Pb5Do+VrpdQHH+8h1gpvjga/+Ek88/1vsv1o5PfckU9NTLC5uoCGjP7+OWx3w3lv2cZUpGS8HGAW/UWLbE1ReMJ0WG4M1RKDbGWOwvsGgrhhkhmLPbgZjbfrWUBQ7GWwIq4OSxfUSb8Zpt/Yxu+N6um43MxP7mRk/QKfYDxRUAbxkBBwiBieKDQGTFHsvgeCVzOab2YcmTcbDX3mQ1bUVgoUdu2a59cab0bpGguezn/kMp06coN3p8B3f9V20Ox2C5BiXxdolYzeDpkJM9QQIoU5eL5MijDFxv/YVeZ7zse/9Lt797nv5zg99GPXK1NQUkzt2RHQBiN1MXNeUs91Q8qZtvr6Y4nF60Xfp1ea5N794TXpdwKkq8KEi2NP8zmf+KS8t/THdmXWq0ANrKUth0K9ZP7PC9WM5H7x+J7O9C2T9kiA5Pu8wCpDloFZY7tesjyp80cZOTRPGJhjbtYelcsQQOHN+gcFaF9+fYueOw+yYvIaD+29jZuoIuZ1EaKenN6BFkv9Jad923ymMufn5lr87NmkUEUJVc+zYQ5ybO8f+g1dxw0030S5i9whrDHNzc3zqk59kz549vOtd95LlRUoku5gLyCUhlma4t3/WBEyzzPF3/s5P0e9v8OM/9mPUZUW73eHqa66JWYzRTxDPk9Ld6vRaUnZRrAhNvQzTJQQfvfiXPK8hBk2JKT9bCdFXQF8XcJoIt2rAS48nX/gv3P/gv+H82oNMzNa0urENbVnCwvkN3Iry9gM7eNOMYWawxHiWs14Zhvk4I5ThYBXJoG6P4canCK0xipm9XOgJZxdLzp4bkmc7aOWTvPmmb2Hn9EFmxg9gZRrVDkbGULXRLdA4Il/Wj+HydPEKTLl13lNVJccefpiz587wljvu4NDhq9PxMWjS6/d44EsPYI3l7rvfRp7nGMniWbZ3rrpElFwOOFVVxTxhDXzyk39Iq5Uzu2MHvqrZs2cvs7t3g2l6/W0BRxVIFSGCXpSEJpCcsoDGlK/Y4m4bV1IbuV7KN77CIYOvBzgRMLHYX2UAdoX/fP+/58nnP0mvfo6N0VnytqAmPs6wXzMdHHcd2sfefMAkfUQMa7WlbzuEvGBmapwgipvcwcZIWVgqOTdfUVaTdNtHuP7IPRw9eDu5nWS8OwUIQS0aMoJ3OLfNdyG8DA6vRhcfGYvTjDEsLczzJ1/8IjM7Z3jTm99Cp9vFp++iRSOcOXOGp556ihtuuIGrDhwkhKh3NL6UyznaLgec5vONjXXu/+wfc921R8mtYWV5lauPHGFyajoFIy8GjtQSW3xow2ZS313bZPunvxDFMGwrKxaJAErt3kRSWuEV0tcMHNKKoglU2gFnLjzJgw//Pseff4DOlGOjt8LS8gLYQOYCu6cMh3bmTOc1Yy3P0Ad8MUmPAi85ubOsrYxYWXFkxQzT01czNX6Yaw7ewY6Jq2mbaRxdtIKgsXBN4rPjPaR43cWDtVmp8Op0KceJ75XHjh3j2Wef5W1vfxv7Dhwk6LZqSiUWEfbW+fSnP83Y2Bh33flWxscnCSEQQsA1iuxlAHLpZ00axvHjT3H8+FO85fbbGW/nnH7pDLOzs+zZtz8GJeEi4BAkyiriQ2h6ZBUSd4mcx4RmA4GtY5uH1oicdE+vPV4NfV3AaUhVqXyNtZ5eOU9vsERWWLyvWFw5z3Mnn6CuNhgMT2DDEkXmscZTqlCaDpW0mejMMOwN2T1zkIP738r4+C7axQSZGcPQArVkkkFIXStCrC0ym73PGlme2PImFOwVDcSlHEc1UA4HfPFzn2N1bZUbb7qR6268Gd22MlUV7z2j0YgHH/wSx586ztjYOHfe9VaOHDlCq9X0wHo5Z7kcjUYjvPecOXOaxx77Kusbqzjg0MFD7Nyxkx2zu5jZtQtrtp5JN71osY9WnPbERbb9C2BTBaZIfGBN60qEVPYYmzOY1C3wSuh1AifdREJ5NGbj6aLqNkQZoKGkqgYMRxv4UIPNKDpT5HacnFbsBKEGpJUAUBEktpuNQ2AQjVVAioI0ZW7NrW8NVnya6FG9EroUOHVVsriwwJNPPM4nPvEJyrrir/61v85bbr8Dc1H+ccxN9t5z+vRpzp+fZ8eOnezbt49utwsJNJcC53KiqikZBuWzn7s/hjnabTrtLqdOnaKsa97xznfxvvd/YOs8QK0jKmKej8MiamJzAZWtMVVFXeqzrPEYSAnvBpDYalsB+4YBJ4EnalchrvImIYsAMiKW8cfmYbrZzyEW4VscBEGq2J0TGwcvJsWmizSWUXpgFZ+As51MKvRtZPaVO1QvBU5VlfQ3NjACTz35JMZZduzaw1UHDm5yG2ujSayqsXL0ksFuvpPLRKEvB5ytKYgcT0wM4q4sLnL69BkGwxE7du3iyJGjW79pVIY6YJuHjTIqrehmJSt1MaAWj9MMSxaV4uY8JiXmQwTdGwMcTeVlTQ1Uqq7EJs5TAhVeHTUWTyzxMChWAlZBg0HEYiRgtZ8mPwN1iQtt7xwU5falFLlLeuDm6yt7/pcBJ/hY5LY54aLEpvgxSNiA5tKJ3/5Z81u9TIeJywFn0y+jMTleJGy2OwGJxYekpPrtOo6Pi45UQ45VgqnxxL+SUeLRNYJgNaclXUzIUsp60oWk2WfrDQIOQGyWEQvoDBbRFHyD2HZBajQYQkhd0lPhupWAGE9QpSTWQWeNMsdWGzNJnaXSG5RodkfaWqmxKC8NKGyy5IvoMvrGy4ATPMHX0TI1EbSqBsRuHi0S92oQEy0nicpCXEgJLM2wbgdOvL/0+hLgeR9XPmgseUKpywpFyPI8NkGQ7cCBoCMCfYJ4hvSZH57jzPKLLI8uMDA9Lgzn8eq5bexubpx9M+P5FI4WeWhjNEsGBSA+Sght6ui3BqUx3S+l1wWcqFbFLXkERXyUq0oUFWoCQTxSJtmb2rbG+v+Y/KUSJWzceSGVbwgYfHLUpdWwKQK3ALGdxTfAaRCXCojT9/H11rvmVRSBTcd6gVTrFFCNCU/BBzLbinVeaaBVEodAqUONNZYgGnluarnfVBTES2jyUifelZ5FJHqPNcQebEFrahlSyQhUaEkXlxLpfaiRWE3Y9O+gZJkXRg/x3NxxTl54nmfOPM5c/zQ91tBWzUj7IIbdo2v5Szd8lA++6buZ0r20mYzVHLHvW3QWhk1tOVJjtycmFGc6hjsMr7Oxkqcm8gAXUzebypCIgcQ2PTbYLdaYtinUBLa4IBuHoo33LrGAvrlKZOGpCdFFrL5ZzdFjuvUgmhoHxe7s8RHjJmWbs9+80tQdK/4vqeMaeVdzLZ/uX+JiCRLbe8Z7jWdq+IVL+0ulOYkc0CrexKHPfIyyVzpkpCNc7qjCiNXBIsujBebDGc6svkjlDR3GOTh5iH3dA+xs7SS3OYhSUrJRDzi+9hD3v/jbPHnyMdaqRUq7gS9KvKkIEtKTGGy/xY2dt/Lj7/tZjrrbaYcJgihDMwICuRY4b8HEytmoJ20Obewwlmy4yAKy1wccNucxTZRGk1gAKzaiOIBSEXuExrYmCFQh6g6CBYllHpraUMdVtZ1bNNO5xYEaAEhi25sg0tjrzvhGoU4fa4wob3nAiKCUehvLTpX42iSoxXPXsTp/2xWJlh4xUKkRZ3G7RVHURCM3NkaQZBXGxkQED7ZkaNdZCOc4vvQUT734KE+d/iovrZ9kVKwzsD2CMZhhxlQ5y83Td/JD9/437Bs/zMn5Z3h86QGeWnmAr57/MuusUpkSzT2VqeOClWYcMkzIGFud5Eb3Fn7s/f8zN469FVtmBAelicZIFhxWwds6PXe8563nFGJyZ1ws8rpbuTV6cQaV1FSUaCx5I9MMW1mok+buKsTW1DKiZkQVNxVCMQy9p1duMPDL1KHCBx/bpaUNvqyxoIFhPWRQDoBAZjOczcnE0W51yPMWmSvIs4KCnHHGcGSYpB4m3rHtDxRD3GokKt1RX9OoVmqJDzUqSr9apgqDqBxjyclx5OS2oHBdWq4gJyfTDK+BWiBIBJbBYoPDeIME6OVrvOif5wvP/hEPnf48p/vPsVYtoPkI7yrUesgqpFI69Qy3zr6Dm3a+naP7b+aZ08f5/PE/4uTgETY685gs4HyGdYI3MakuPphgfIYJDuNzZlb38p5D38733v1X2SvXYeoMzaC2UUQ4jWjz9mLPkKT4l9V0/z6JLvc6dZzEADatQJ/0ktjzLnaACkEpxVCZIev1POfXX2B+/QTLw/OsDhfpVwN6gwGL/WVWWI3d0usqiYnIT6JYUuqqZlj2CdRkLidzOc7ksfGha9Ftj9HpdOlkbSZlknbWoVW0sDbDWkeWxVhSw4nqUFNWQ7x66lBSak3ta/qjDVY3VhhWI7DKgHVKPyDUPu6XJQ6nGa2szVh7kk67y6SZ4uapW7l2/81MZXsx2iELHZzmSYeKTRGe1+P8x8d+ic8+9Yf0ugv4Th81JU5DjBQEwZQwW83y3js+zNX73sJqr+JLzzzIV88+yLqdh9YIT0VhcmwtUf+QOjJzjR3qnbdkwSLDjLfNfhvfdfsPc+3kbXSqGUxoQRZS4wXFqAPvULFxHk3cwkmJO/RZdbFxgZfYjuv1AEe10SMUG1zyxcS59qaktH1K22fAiJVQslQu8uizX+Shpz/N4vAEdb7KQNfwxiNWqA2UrSQgVDfTELbvKS7E/BlMRGvsSSfRLxFiO6kQ4u9NbWO3T9OkV3IRt0EFgwdKfLJmvHgwsdFBjP/FbqDGNFZiXCsi4OtGqYqrxpU5+zjE+277Dt5z7Ue4Sm6kU0+CB5/X9M0SA1b49IlPcN/Dv8oCLzIc32BoRxgbweLqPHLJYYu797yPW2+5jQef/gLHTz9OT1cRV6FS40zsl2xyQ5UFyjpgLWTG4EeeXDOKkBGGgXEzzd+4++/z7n0fxYYOeeiCt4hT1MR4hcEhtYn7Pxkix8kinxaTxjhoVAeaBplfL3AAKipGWlKQ4aqISlygynos6lmeXHqEL7/wJZ5fPMFGWGO1nGPDzxPaA3w+Ilh/Ua/gzajBNrrUgg4xVBQhkFrMRkMqeUsTl4pqe/NoETChefhEVqN9Qmpk2QyUSkzyajrQOY3HIpGDBgLGxTZvQYjnrQ15Oc6O/kE+euNf43ve9DfoDMZBYL1Y4rR/mmOLX+CTX/k451afwU9UjIoRI62xocCVHUzZwoSCG254M9defTufe/iTnN84TsUi3XZOGHqsWsQqpR9hcom6orGoN2htadtxdJgjI8f02CzvvuO9fOu+72YvR2KhIXlcJFpFPTTpM7k6TJ0EVEgt7wBjJW4HKVHvMxoT3l4XcLzW1FKDeryvUFexXC1w/MIjPHjy8zw1/ygLo3OM8iWGsoFmirSEIR5tDByNk+q80Kov3RYwPtb29yoazeHGpKUx1ZPyqrFZUGli+7ZNSsdESopfiKaxkdgvUBBCiEAwSSlUgcoOCdZjkoKuIRYdakgyWgymzij6U9w0cSf/1S0/zN2730ennsTnI+bs8/ynR/8Nn3rut9lw55BWTS2xaZQrC2y/wySzHD1wA4f2H8FO5vzR85/h+dNP080MmfH4egMyn9rQCR5DMSzoDFq0WmMgBRNju9i76xp2TR5ktrsfJ12m21PYjXWWl+YoQ2BUlrHLhkLhMoqsxfTkDPunD7C7dYCOjJOFFnno4LQdV6mNirPHY7FY3OsEThUThEauxwrzPLr4Jf7o8d/lxOrTLJXnKE0PkysmH4H1VBotdslc7JiuxBWkggtKpskXAxEkaTvDrU8ujf2k7xqzZhMaSnBbKnHTzVE3zcwENOtR8WgKfZlg4oqKnspYXYGy0a6obEC8kEtGQYELBdY7Mi0oXJsps5O79r2bt179Tg53b2BcZ0FgRc/zmRd/m19/+F9zPjtBNTaM/QeDw1UF+UaHPe4A7779vcxMT7O6vsIXnryfZwaPYK3DVW1CAHFKZYYIgtMuLZlm1u3gTVffxGR3GuMKsok2cxcusLiwStkv8aXHlzUDfYn59RNUzkcluq7JseSSYbwldy3GWjs4NH0rdxx9B9dP3MyB7CjFaJxMYx64ZlBLhQDu1czxl3+ssK2wSwCpYsPkC+YMv/v0r/G7T/8aZ+RZBq01sB6HYD3kajG4uP83pNySmHxk1WM02leVTclJF9F2KLHlWLgohSJtT7gNU5IcjZoApzT6T3MuQW1qLloJLmS0TBsbcox35JKTmwxjMizx87FsjN2Te9k9toednV3saO1iV2c3E50pWjLGuJkmo0MIFnGWIet8ef5z/Icv/l88Xz5EPdOj1hrjLdYXSC9nR76b97/9g3TGOvzOZ3+Luf4ZTKci1xoMlAaGpVLoBIenrue23W/m+qlrme3OcHbjNA+fP8aZ+TP0qg1Gus7Ab1D5AUiFM4qvK4xt4Z0wtCNq52N3uErJvcEGC97gvSHXCab9bu7edS8/9La/xR5zGFePxQHLwae41qtynFLBBTB1nG6fCwMJ1BrIMBQBEM9SfYFH5h7kV7/4f/NCeJxq5zoDt06Q6FE2HjJtY4gau6Ko1simMZ48xEoKJzR06W3F90Gi+Gj0GtG4J7hK3Fuh0YGy1KH21Ugl9sGZZIpbdt3B9VNvZkJnaflxWq5Fnhdxr2/NKFyHsdYY4+1JxlyXFl1yCrK41Wvc4X7o4n7gLWXg1pjnOX7nsV/m9x/7OIPxdUZ5Scg8MjBM93azm0Pcddvb2XdkP3/w2O9x7NRXkI5HQ017KJhgmRjfzXR3L9ftv5UbD91Cq3JU/Q3mz7/El1/6E57sPYEajziD1xHiFGxAJaZKiBD7DVlHTZUakse5dR5sbcnEUQYF08Istbn3wLfyN97xE+w315DXk+CFkEFt4wLNXs1zPAQyDdgqmmxkjgFCLQGjNW0JPL36FT7+xC/xxJlHWNI5qvEePRtlMRpvzATihqOJG0RfWooeb7tyEKgvCmmnLzePSbGo5K0TjfpJ5CVxu0IvEFI/Mret5e0rkUhBNcjZYffx3Xf/IO/Y+ZeYYJYu01iyTTe7RciI+20qgBoyybacekos1NMRXpQq85z3J/ns85/gk49/nLP189RjgSoTqn7JbreHew99K3fteQdF3uFTX/1DHjjzOXpuhaJjGc/GOTR9DQd3XcN0d5bu2CQLS4s88+JTnFk8wdJgHnUj+rJBmaf52XLYEzOWwubzqzH4EC1SY2Ow1NeKeMWqjeGgUUY37ObWfXdw5+y38J5rvo0duh9TtQFDyGAkFQaheDWOMwQsJUYrTHCILwjJ2Ve6HmvhDP/uK/8Hv3f6P1AXFT6rCFmgVsVKzJDIasEGiSvAbAdB1F+gkS+CN4HSbaU2vnzSk6BqdojT7ZvLC5oU2cZKM5vb6bwyeW2hdZu8brN//Gqunrqe2eIAu7p7me7soNPtMt4aY5fdTYdW3PYIF1l1cu7FP4NnREWfdT/gufPPc+yFL/HQiftZ1JNUYxuMsooS2J8f5EM3fSffcuA9jMs0jz//GM8tPEmvtYyd9LTGDB3XphxZ+oMhCxfOs9pf5sziS2yEVcp8SCg8tY2bz1p1cVHFcF3csB7BpIUpQDCeQEwsVgzeg9GMegQmZBRZm4Nj1/KeAx/mjiP3sCffz0TYifUtrLZQA94FSioshuLVdJwooEYoI5wWuKqAIWgOq62z3H/mt/h/vvzPOVM8FxPNQ6xJbk5nmu11NAbwNCEhajbRBIQYMW84iEgsHYkHbiksCTIRBpJSOFLazhbAYi5Q5EgQJOX2vAqFFJWw3qKVQCmYMqfjxuhkXXKT07ItJmWWjhkjdy1yV1C4gk6nQ2ZzWlkr9cNxZN0OwTnmlxbpVato0aPK1hiwhheo1bC3c5DDraOY9Yww9KwP1zi99gJrzFPRoxoN6Pd6nB8s0a96uEyowpC8bfBU1FIl3SxugyhVcp7RuBSS/6uxAwClxjliVeswI6/G6DDNzvZ+9kwc5Karb+W23Xdx1N1CpgUEgyNPKTKxk3ttAp469Wl9FY5DDSM7opYRjoyibqMjCJ2Srww+zS984X/luf4xyEaIOCQ4rMupg0clxIkzVUS6RubZaKzRLxBnPkjUb5w3tKssmrk0iIjmbrzF6HjytiaYenM1ySZ4YowKTfuZXwFw4vlt1I3wGJcSoCrFBIsLeerekgyDAN5rZO2BCP+0yaoEg9GCLO/iXE7tK7J27Jha6QjEUHvioJdgvAWvDBlSFyNqN0CDJ/MGJ46hUyRrcnRqnLV4FSSZgHUNLWuROgVYTdwU1qN4E/chj88FtrK0KdC+pT2a5FDnWt590wd5y757mC32MW1mMVUOdRb3shJD0OiYNWkLJE1jEGNvvApwhhDywNAMAaGgQIPnfDjBf3zuX/Mbz/1b6mKJbiVQW1woEJ/h6xSdtwG1VdQTtB2zACXgqfCUiAuRe1iNnlMsEiLbVVV8w0qsIjamN4QGbynZKRCtsIsAtJkp+Nqiyvo2JrQJ1lOZkpDMczQCwfoMoxBcFT3cSawiCaSRXW6KRpNyWmRzS5cAWiceEJ/PmzKei7gPQ7CKT15aq5H7GTUEV0UjIDlFVePpLPH5SYaCJwaSgyqiBmcswYMmz7YEyyQHuHr6emZaOzk0eYQbZ27jxp23MsEMxaiLVFlcQ620lgwpdTcqw1ZdclFsKVKvDJxBNMFqG6ip8Tqirys8svAnfPyJX+KRjQcIZoOxkSXzHaazWa6aOsLO1h46rkNuc1zauMJrmzoIlR8wrDcofY9ef4WR32Doe/QHG6z6FVZbq4zCCOMMahRv6riNYsKDsUpeOUwpqNSoC9E6bwCS/olJXJdxQ19CJuSYkBNMTTBVNDeTci1EP07k+VEURGpeR/A0n6oJEXgary+hCVMoNoBRF3f2NSOCjVv51JFxxdMHG9NP1EanpC3TSo9Ox7gnqUCI4QWjMHSeoQOnQhHamA2H7RXsbu9jXCaZac1yYPogN+66h8M7b2CimKBj2hS0sOrIQoZN3ehVoLI+WqgklELU6NQhvmFfcSPzVwaOj/BSA7UEBqzy4sZxfu8rv8H9T36KeqJmenIHezp7ObTjam4+9Caunb6BSXaQU+Ca1ieqqMSsQOLebAQqKh0QpKLyI1Y2lpkbnuK5+nFenD/B/NIcyxvLbNRrVDKiNiVeaqpQUWDiPkvWo0VMkAwpxpSmM3KMKwBO1ItcyoSOuljjX1RIdhxkPqa5NhSvkyjpEsEoldtMF9rkhIa4S29U5AUT0j5dptmaUWK+j0YrTVOyVOEdqOCNj4sn5fN4DZj0sF7i9ki2dBTlGNPsYbLezbff9RHeduRddBinrRO0dBzrbXQkEk1bsQImMoWaOoHFJRdJ5KyCJE9x3PJPQ/rtq6VVVPRwoYV4SzDKurnA5577z3zm4T+kNTbGHbfdzXW7b2XKzZKT0zVjGB/ZcW7yKK7SoIr3cULSXxQi0fcisUAVz4CSVYY6YBSG9MI66/UKc2tnOXX+eeaWz7E2WGFd51mtzrE2WkmWXE1w9aYZHmeyOetlH22TggjemLTtcszea34SmokVpQghcp+0qfwWNQopKahmL3m2pNYlqweiKEKjM00lVh4Yb+MudhJiEpYBV3fiAEqFGI+vA1pZOm6KgkkKO8FUNs2OfIap9g5mx/ZxZPf1HBg/zI5sL20dJwvtFL/ziGrMCU86oBhBrVJFeQICLm5nliok4vBJDLnjqVGN6cFWXsWqGrJGrl1MbVFRVsMFHn3xQXxWcvTA9UzYnbTDBFmIaQ2acoNVooMpGPASc4ozfCrNjZParObNAIPY6O6vZHOZBltRS0nJEE9FqUNWhkss6AucWHuM4yce58XFk1wYnGdoelRuRHA+6lYpnoVpymSbUEXjBrAIMX0g2HrTAjQhWntC2hku5X1ZLzHds9HItynwcfAin1CNG2+EkIrhjGDj5u4I27ziKdkLjcVytjZRWRZPkBpvIfg8OlBrJasdM62dHN19E4cmrmdPcYRd4wfZN3aYqXw28QSbMvOikpKZxMGCEswIJMR9K7wgZFsO2WQPSNo1kdiNLyZu0RirAS912njOvnrIIaiPjjuNQb3Sx1ZpeSvH2XhTEFdqw9+1WXibpInNXPYS2yj9SOO/InEqSFNCwhNAYJ0ha6zVS5xaOsEzc09wYvlZ5kanWKrm2AgrbFRrjPIasbFPYHNSr0pQg9gsTX4JElvlbwZNJd6vNrcugoRtCVLxKFRTlmOytmpTU2YhdrtI1pZRif12NObpqo/WjtdAqBUbTFx4VUbHdShsC6uWwrZpmXG62RhtOky4aW47fAe3HX4LM7KbNpO4kCFSoBK3pY731/yvGfNm1C4d/4sm6QopnqNZgK8InO3U1Ak1NdEQt0uMe0RdfBOXvn+9dOn5QtCYSmADlVQMWKOnq6yFRRY35nhp/gSnFp5lqX6R8yunWd1YpJYh3o4IWUWwFZIrKkJtDD5VJITQ1DQZzGZMLhWuiaAhbgoiGvsXEyLYNAjqA+rBiIut/FP0PJroBmdcdBSqUPgJpjq7mJ6YoZt36ZguE61JZsZ2MtYap513mOxOM9XaQyZtCmlhxNKVSQo6OC3iRm4quJQz9EZSMx9XBByIQU9NRWab4Lmyn35DKSD4kHT+aHkTtCZIjH9BoGbImj/L4vAs8ytznF0+xbm1EyxV8yz251gdLDLwfQYMKKXEmNiEURrANEnmgGAImoNE+S9qsGpp5R0yl5GZHGcsWd1mwu9kojtJtzOGFUdmHJ2iQztrUeRtMpMxYWeZHbuKqbFpirxFQSuluDps8vvGxk8OazIsDt0smEvOPY1/RsD+eQfOldI3+HQvo7iPbtOEOw6mhmgaxyy12G9WXY2nIkgsTBvQY82vcmGwwHJ/hX7ZY+hXKMNi3LG3qqir2Ct48xkk/k9Mizzv0Gq1KUxBJjlT3Wlym5PbHGsyWrSYzmZpuRaZyaN1RyzNjSX/BlAsBYYinVyjn0FjAwEhcjtfhRTujU63EOtXIoe3CTHpt4aUDvsG0dcFnO2HXipCGvoaTvd1kTJCpI4Dr5L25Wx2gpfGAI4Da2P8SiWmT3gg5rFF3mQY4eht06a27r15JZB2kDPJ6oixKUkKaTT/TfLURd4QFKxERVxUMdKUJ0cPZlNBISmMopvtUKJIlOQjSgpTAnC0pZWtsL+qRSg27/mNoK8LOH/WpBq3BYwrcdskC8mJFa0bAdDYOBqIIYKk0MZ/429FY17QRbqjkDT89KEKmFgWnL6MG8hGFMbDNFofdR4tD9EmVzBWOqRfpfM3P7r4/9tvYrvF2WQiNgbd5vW0WSMXL+DLTecrLfLXQ990wNl0nDRzSIx3hVgllbiGEnehArM5fRr5jGpMJwsBJCeY1JJk+yhsH+coLdLLdFCISvPLfIzJxCaBN72MlH6aJOw2iu6L7e9DatUQXYGxIt8mE5lt/zalKn8W9M0HnK130f/QiIc4BVuI2gRLJEEx6mP0VnwqusuopdE3tlNzHUlrv3Emxr/m/9txY4PF1fn2n6ZZ3jp34KK2hJu0BczISFWUWuIvov+2OV2MRzWnRl7Ocd4o+v8AzsbSefP2n5wAAAAASUVORK5CYII=" alt="" class="footer-logo" aria-hidden="true">
+        <p class="footer-nombre">Asociación Campesina Sueño Agropecuario de Colombia</p>
+        <p class="footer-desc">Entidad sin ánimo de lucro que representa y fortalece a pequeños productores campesinos de Aipe, Huila. Desde 2025, sembrando futuro juntos.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienes">Quiénes somos</a></li>
+          <li><a href="#productos">Productos y servicios</a></li>
+          <li><a href="#junta">Junta directiva</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Información legal</h4>
+        <ul>
+          <li><a href="#">NIT: 901904581-6</a></li>
+          <li><a href="#">Inscripción ESAL: S0714829</a></li>
+          <li><a href="#">Registro: No. 53652</a></li>
+          <li><a href="#">Supervisión: Gobernación del Huila</a></li>
+          <li><a href="#">CIIU Principal: A0150</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="anio-actual">2025</span> Asociación Campesina Sueño Agropecuario de Colombia. Todos los derechos reservados.</span>
+      <span class="footer-nit">Aipe, Huila · Colombia</span>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/573163160205" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contáctenos por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
